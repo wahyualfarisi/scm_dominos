@@ -1,0 +1,1563 @@
+{
+	"info": {
+		"_postman_id": "ab324c98-ea45-4010-8cdd-c4de92e6bae0",
+		"name": "SCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ext",
+			"description": null,
+			"item": [
+				{
+					"name": "EXT - Shipping (fetch)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2NtLXdlYmFwcDpjb2RlbWFuaWFjaW5kbw=="
+							},
+							{
+								"key": "SCM-INT-KEY",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9waWMiOiIxIiwic3VwcGxpZXIiOiJTUC0wMDAwMDAwMSIsIm5hbWFfcGljIjoiSGVuZGFyIEp1bmlvciIsImhhbmRwaG9uZSI6IjEyMzEyMyIsImVtYWlsX3BpYyI6IjEyMzEyMyIsInVzZXJuYW1lIjoiaGVuZGFyanIiLCJwYXNzd29yZCI6IjEyMzQ1IiwidGdsX3JlZ19waWMiOiIyMDE5LTA3LTI1IDAzOjU0OjMzIn0.f76M-QaFwQWYBkKydSpghQkcg8oC0b_1HbXNpP6t9sg"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Shipping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Shipping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXT - Auth",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "hendarjr",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXT WhoAmI (fetch after auth)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2NtLXdlYmFwcDpjb2RlbWFuaWFjaW5kbw=="
+							},
+							{
+								"key": "SCM-INT-KEY",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9waWMiOiIxIiwic3VwcGxpZXIiOiJTUC0wMDAwMDAwMSIsIm5hbWFfcGljIjoiSGVuZGFyIEp1bmlvciIsImhhbmRwaG9uZSI6IjEyMzEyMyIsImVtYWlsX3BpYyI6IjEyMzEyMyIsInVzZXJuYW1lIjoiaGVuZGFyanIiLCJwYXNzd29yZCI6IjEyMzQ1IiwidGdsX3JlZ19waWMiOiIyMDE5LTA3LTI1IDAzOjU0OjMzIn0.f76M-QaFwQWYBkKydSpghQkcg8oC0b_1HbXNpP6t9sg"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Auth/whoAmI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Auth",
+								"whoAmI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXT Invoice ADD",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic c2NtLXdlYmFwcDpjb2RlbWFuaWFjaW5kbw=="
+							},
+							{
+								"key": "SCM-INT-KEY",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9waWMiOiIxIiwic3VwcGxpZXIiOiJTUC0wMDAwMDAwMSIsIm5hbWFfcGljIjoiSGVuZGFyIEp1bmlvciIsImhhbmRwaG9uZSI6IjEyMzEyMyIsImVtYWlsX3BpYyI6IjEyMzEyMyIsInVzZXJuYW1lIjoiaGVuZGFyanIiLCJwYXNzd29yZCI6IjEyMzQ1IiwidGdsX3JlZ19waWMiOiIyMDE5LTA3LTI1IDAzOjU0OjMzIn0.f76M-QaFwQWYBkKydSpghQkcg8oC0b_1HbXNpP6t9sg"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order",
+									"value": "ORD001",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status_invoice",
+									"value": "open",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tgl_invoice",
+									"value": "1994-09-09",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tgl_tempo",
+									"value": "2009-09-09",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi[]",
+									"value": "ini dekstipsi 1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "harga[]",
+									"value": "1000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "qty[]",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "ppn[]",
+									"value": "10",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "total_harga[]",
+									"value": "40000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi[]",
+									"value": "ini deskripsi 2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "harga[]",
+									"value": "2000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "qty[]",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "ppn[]",
+									"value": "20",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "total_harga[]",
+									"value": "500000",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Invoice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Invoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXT Delete invoice {parameter id}",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "SCM-INT-KEY",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9waWMiOiIxIiwic3VwcGxpZXIiOiJTUC0wMDAwMDAwMSIsIm5hbWFfcGljIjoiSGVuZGFyIEp1bmlvciIsImhhbmRwaG9uZSI6IjEyMzEyMyIsImVtYWlsX3BpYyI6IjEyMzEyMyIsInVzZXJuYW1lIjoiaGVuZGFyanIiLCJwYXNzd29yZCI6IjEyMzQ1IiwidGdsX3JlZ19waWMiOiIyMDE5LTA3LTI1IDAzOjU0OjMzIn0.f76M-QaFwQWYBkKydSpghQkcg8oC0b_1HbXNpP6t9sg"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "no_invoice",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Invoice/delete/INV00001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Invoice",
+								"delete",
+								"INV00001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXT Invoice show",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "codemaniacindo",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "scm-webapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "SCM-INT-KEY",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9waWMiOiIxIiwic3VwcGxpZXIiOiJTUC0wMDAwMDAwMSIsIm5hbWFfcGljIjoiSGVuZGFyIEp1bmlvciIsImhhbmRwaG9uZSI6IjEyMzEyMyIsImVtYWlsX3BpYyI6IjEyMzEyMyIsInVzZXJuYW1lIjoiaGVuZGFyanIiLCJwYXNzd29yZCI6IjEyMzQ1IiwidGdsX3JlZ19waWMiOiIyMDE5LTA3LTI1IDAzOjU0OjMzIn0.f76M-QaFwQWYBkKydSpghQkcg8oC0b_1HbXNpP6t9sg"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/scm_dominos/ext/Invoice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"scm_dominos",
+								"ext",
+								"Invoice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INT - Login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "helpdesk",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "h3lpd35k",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Change Password",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"value": "875a8f2f42c570f",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_password",
+							"value": "helpdesk",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "h3lpd35k",
+							"type": "text"
+						},
+						{
+							"key": "conf_password",
+							"value": "h3lpd35k",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/setting/change_pass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"setting",
+						"change_pass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - User Info",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/setting/user_info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"setting",
+						"user_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Supplier",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/supplier?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"supplier"
+					],
+					"query": [
+						{
+							"key": "id_supplier",
+							"value": null,
+							"description": "Finance / Warehouse",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Supplier Add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_supplier",
+							"value": "PT. BBB Maju Terus",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jakarta",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "fax",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "npwp",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "viz.ndinq@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "status_supplier",
+							"value": "Aktif",
+							"description": "Aktif / Nonaktif",
+							"type": "text"
+						},
+						{
+							"key": "nama_pic",
+							"value": "Wahyu Alfarisi",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "email_pic",
+							"value": "viz.ndinq@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "BBBwahyu",
+							"type": "text"
+						},
+						{
+							"key": "nama_bank[]",
+							"value": "BCA",
+							"type": "text"
+						},
+						{
+							"key": "cabang[]",
+							"value": "Coba Cabang",
+							"type": "text"
+						},
+						{
+							"key": "pemilik_account[]",
+							"value": "Coba Pemilik",
+							"type": "text"
+						},
+						{
+							"key": "no_rekening[]",
+							"value": "1791606298",
+							"type": "text"
+						},
+						{
+							"key": "nama_bank[]",
+							"value": "BRI",
+							"type": "text"
+						},
+						{
+							"key": "cabang[]",
+							"value": "Coba Cabang 2",
+							"type": "text"
+						},
+						{
+							"key": "pemilik_account[]",
+							"value": "Coba Pemilik",
+							"type": "text"
+						},
+						{
+							"key": "no_rekening[]",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "id_group[]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/supplier/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"supplier",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Warehouse",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/warehouse?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"warehouse"
+					],
+					"query": [
+						{
+							"key": "id_group",
+							"value": null,
+							"description": "Finance / Warehouse",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Warehouse Add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "group",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "USR-0000002",
+							"type": "text"
+						},
+						{
+							"key": "nama_warehouse",
+							"value": "Dominos Angke Jaya",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jl. Angke Jaya Raya",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "081355754092",
+							"type": "text"
+						},
+						{
+							"key": "fax",
+							"value": "021123123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "viz.ndinq@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/warehouse/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"warehouse",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Warehouse Edit",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_warehouse",
+							"value": "WH-00000001",
+							"type": "text"
+						},
+						{
+							"key": "group",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "USR-0000002",
+							"type": "text"
+						},
+						{
+							"key": "nama_warehouse",
+							"value": "Dominos Angke Jayaa",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jl. Angke Jaya Rayaa",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "0813557540922",
+							"type": "text"
+						},
+						{
+							"key": "fax",
+							"value": "0211231232",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "viz.ndinq13@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/warehouse/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"warehouse",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Warehouse Delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_warehouse",
+							"value": "WH-00000001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/warehouse/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"warehouse",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Group",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/group?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id_user",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "level",
+							"value": null,
+							"description": "Finance / Warehouse",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Group Add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_group",
+							"value": "Area 1",
+							"type": "text"
+						},
+						{
+							"key": "lokasi_group",
+							"value": "DKI Jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/group/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"group",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - Group Delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_group",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/group/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"group",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/user?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id_user",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "level",
+							"value": null,
+							"description": "Finance / Warehouse",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - User Add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_lengkap",
+							"value": "Rudi Kurniawan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rudikubk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "081355754092",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "L",
+							"description": "L / P",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jakarta",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rudiubk",
+							"type": "text"
+						},
+						{
+							"key": "level",
+							"value": "Warehouse",
+							"description": "Finance / Warehouse",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Aktif",
+							"description": "Aktif / Nonaktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - User Edit",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "USR-0000002",
+							"type": "text"
+						},
+						{
+							"key": "nama_lengkap",
+							"value": "Rudi Kurniawan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rudikubk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "081355754092",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "L",
+							"description": "L / P",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jakarta",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rudiubk123",
+							"type": "text"
+						},
+						{
+							"key": "level",
+							"value": "Warehouse",
+							"description": "Finance / Warehouse",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Nonaktif",
+							"description": "Aktif / Nonaktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/user/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"user",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INT - User Delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "codemaniacindo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "scm-webapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "SCM-INT-KEY",
+						"type": "text",
+						"value": "875a8f2f42c570f"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "USR-0000003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/scm_dominos/int/user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"scm_dominos",
+						"int",
+						"user",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
